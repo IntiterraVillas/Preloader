@@ -3,80 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preloader Minimalista Elegante 2025</title>
+    <title>Cargando Servicios Premium</title>
+    <meta name="description" content="Preloader ultra minimalista para servicios premium">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="prefetch" href="https://intiterravillas.github.io/Servicios/">
 </head>
 <body>
-    <!-- Contenedor principal del preloader minimalista -->
-    <div id="preloader" class="preloader" role="main" aria-label="Cargando aplicación">
-        <!-- Contenedor central de contenido -->
-        <div class="preloader__content">
-            <!-- Contenedor del logo con efectos sutiles -->
-            <div class="logo-container" aria-label="Logo de la aplicación">
-                <div class="logo-wrapper">
-                    <img id="logoImage" 
-                         src="logo.jpg" 
-                         alt="Logo" 
-                         class="logo-image"
-                         loading="eager">
-                    <!-- Efecto de respiración sutil -->
-                    <div class="logo-pulse" aria-hidden="true"></div>
-                </div>
+    <!-- Contenedor Principal Minimalista -->
+    <div id="minimalPreloader" class="minimal-preloader" role="main" aria-label="Cargando servicios">
+        
+        <!-- Contenedor Central Ultra Limpio -->
+        <div class="minimal-container">
+            
+            <!-- Logo Central con Respiración Sutil -->
+            <div class="logo-container">
+                <div class="logo-breathing-effect" aria-hidden="true"></div>
+                <img id="premiumLogo" 
+                     src="Logo fondo blanco (2) (1).png" 
+                     alt="Logo Servicios Premium" 
+                     class="minimal-logo">
             </div>
 
-            <!-- Texto de carga minimalista -->
-            <div class="loading-text-container">
-                <p id="loadingText" class="loading-text" role="status" aria-live="polite">
-                    Cargando...
-                </p>
-            </div>
-
-            <!-- Barra de progreso elegante y delgada -->
-            <div class="progress-container" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
-                <div class="progress-track">
-                    <div id="progressFill" class="progress-fill">
-                        <!-- Brillo sutil al final de la barra -->
-                        <div class="progress-glow" aria-hidden="true"></div>
+            <!-- Sistema de Progreso Ultra Limpio -->
+            <div class="minimal-progress-system">
+                
+                <!-- Barra de Progreso Elegante -->
+                <div class="progress-container" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
+                    <div class="progress-track">
+                        <div id="progressFill" class="progress-fill"></div>
+                        <div class="progress-shimmer" aria-hidden="true"></div>
                     </div>
                 </div>
-                <!-- Porcentaje discreto -->
-                <div class="progress-percentage">
-                    <span id="progressPercent" class="percentage-text">0%</span>
+
+                <!-- Porcentaje Discreto -->
+                <div class="percentage-display">
+                    <span id="progressPercentage" class="percentage-value" aria-live="polite">0</span>
+                    <span class="percentage-symbol">%</span>
                 </div>
-            </div>
-        </div>
 
-        <!-- Gradiente sutil de fondo -->
-        <div class="background-gradient" aria-hidden="true"></div>
-    </div>
-
-    <!-- Pantalla de completado minimalista -->
-    <div id="completedScreen" class="completed-screen hidden" role="dialog" aria-label="Carga completada">
-        <div class="completed-content">
-            <!-- Icono de éxito minimalista -->
-            <div class="success-indicator" aria-hidden="true">
-                <svg class="check-icon" viewBox="0 0 24 24" role="img" aria-label="Éxito">
-                    <path class="check-path" d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="2" 
-                          fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
             </div>
 
-            <!-- Título de completado -->
-            <h1 class="completed-title">Listo</h1>
-            
-            <!-- Mensaje sutil -->
-            <p class="completed-subtitle">Todo preparado para continuar</p>
+            <!-- Estado de Carga Discreto -->
+            <div class="loading-status" aria-live="polite">
+                <span id="loadingStatus" class="status-text">Inicializando servicios...</span>
+            </div>
 
-            <!-- Botón de reinicio elegante -->
-            <button id="restartButton" class="restart-btn" type="button" aria-label="Reiniciar animación de carga">
-                <span class="btn-text">Repetir</span>
-                <!-- Indicador sutil de hover -->
-                <div class="btn-indicator" aria-hidden="true"></div>
-            </button>
         </div>
+
+        <!-- Indicador de Red (Opcional) -->
+        <div class="network-indicator" aria-hidden="true">
+            <div id="networkStatus" class="network-dot"></div>
+        </div>
+
     </div>
 
-    <!-- Scripts de la aplicación -->
+    <!-- IFRAME oculto para precargar la web destino -->
+    <iframe
+        id="preloadFrame"
+        src="https://intiterravillas.github.io/Servicios/"
+        style="display:none; visibility:hidden; width:0; height:0; border:0;"
+        tabindex="-1"
+        aria-hidden="true"
+    ></iframe>
+
     <script src="app.js"></script>
 </body>
 </html>

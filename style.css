@@ -739,959 +739,733 @@ select.form-control {
 
 /* END PERPLEXITY DESIGN SYSTEM */
 /* ===================================
-   PRELOADER MINIMALISTA ELEGANTE 2025
+   PRELOADER ULTRA MINIMALISTA 2025
    ===================================
    
-   Filosofía de diseño:
-   - Minimalismo absoluto
-   - Elegancia sofisticada
+   Filosofía de Diseño Minimalista:
+   - Estética limpia y sofisticada
+   - Solo elementos absolutamente esenciales
+   - Espaciado generoso y proporciones perfectas
+   - Colores neutros premium
+   - Animaciones sutiles y elegantes
    - Sin contaminación visual
-   - Estética premium y atemporal
+   
+   Arquitectura CSS Enterprise-Level:
+   - Sistema de tokens de diseño premium
+   - GPU-accelerated animations
+   - Responsive design premium
+   - Performance optimizado
+   - Cross-browser compatibility
    
    =================================== */
 
 /* ===================================
-   VARIABLES CSS PERSONALIZADAS
+   TOKENS DE DISEÑO ULTRA MINIMALISTA
    =================================== */
 :root {
-    /* Paleta de colores minimalista */
-    --color-primary-bg: #ffffff;
-    --color-secondary-bg: #fafafa;
-    --color-text-primary: #1a1a1a;
-    --color-text-secondary: #666666;
-    --color-text-subtle: #999999;
-    --color-accent: #000000;
-    --color-progress: #333333;
-    --color-success: #2d5a27;
-    
-    /* Colores con transparencia para efectos sutiles */
-    --color-overlay-light: rgba(255, 255, 255, 0.95);
-    --color-overlay-dark: rgba(0, 0, 0, 0.02);
-    --color-pulse: rgba(0, 0, 0, 0.03);
-    --color-glow: rgba(0, 0, 0, 0.1);
-    --color-shadow-subtle: rgba(0, 0, 0, 0.04);
-    --color-border-light: rgba(0, 0, 0, 0.05);
-    
-    /* Tipografía elegante */
-    --font-family-primary: var(--font-family-base);
-    --font-size-small: 11px;
-    --font-size-body: 14px;
-    --font-size-medium: 16px;
-    --font-size-large: 18px;
-    --font-size-title: 24px;
-    --font-weight-light: 300;
-    --font-weight-regular: 400;
-    --font-weight-medium: 500;
-    --font-weight-semibold: 600;
-    --line-height-tight: 1.2;
-    --line-height-normal: 1.4;
-    --line-height-relaxed: 1.6;
-    --letter-spacing-tight: -0.02em;
-    --letter-spacing-normal: 0;
-    --letter-spacing-wide: 0.02em;
-    
-    /* Espaciado modular */
-    --spacing-xs: 4px;
-    --spacing-sm: 8px;
-    --spacing-md: 16px;
-    --spacing-lg: 24px;
-    --spacing-xl: 32px;
-    --spacing-2xl: 48px;
-    --spacing-3xl: 64px;
-    
-    /* Bordes y radios */
-    --radius-small: 3px;
-    --radius-medium: 6px;
-    --radius-large: 12px;
-    --radius-full: 50%;
-    --border-thin: 1px;
-    --border-medium: 2px;
-    
-    /* Sombras sutiles */
-    --shadow-minimal: 0 1px 3px var(--color-shadow-subtle);
-    --shadow-subtle: 0 2px 8px rgba(0, 0, 0, 0.06);
-    --shadow-medium: 0 4px 16px rgba(0, 0, 0, 0.08);
-    --shadow-large: 0 8px 32px rgba(0, 0, 0, 0.1);
-    
-    /* Animaciones y transiciones */
-    --duration-instant: 0ms;
-    --duration-fast: 150ms;
-    --duration-normal: 300ms;
-    --duration-slow: 500ms;
-    --duration-very-slow: 800ms;
-    --duration-breathing: 2000ms;
-    --duration-loading: 5000ms;
-    
-    /* Curvas de animación elegantes */
-    --ease-out-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    --ease-in-smooth: cubic-bezier(0.55, 0.06, 0.68, 0.19);
-    --ease-in-out-smooth: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-    --ease-bounce: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-    --ease-breathing: ease-in-out;
-    
-    /* Dimensiones del layout */
-    --logo-size-mobile: 60px;
-    --logo-size-tablet: 80px;
-    --logo-size-desktop: 100px;
-    --progress-height: 2px;
-    --progress-width-mobile: 240px;
-    --progress-width-tablet: 300px;
-    --progress-width-desktop: 360px;
-    --content-max-width: 400px;
-    
-    /* Z-index layers */
-    --z-index-background: 1;
-    --z-index-content: 10;
-    --z-index-overlay: 100;
-    --z-index-modal: 1000;
+  /* Paleta de Colores Minimalista Premium */
+  --color-white-pure: #FFFFFF;
+  --color-white-soft: #FEFEFE;
+  --color-gray-50: #FAFAFA;
+  --color-gray-100: #F5F5F5;
+  --color-gray-200: #EEEEEE;
+  --color-gray-300: #E0E0E0;
+  --color-gray-400: #BDBDBD;
+  --color-gray-500: #9E9E9E;
+  --color-gray-600: #757575;
+  --color-gray-700: #616161;
+  --color-gray-800: #424242;
+  --color-gray-900: #212121;
+  --color-black-soft: #1A1A1A;
+  --color-black-pure: #000000;
+  
+  /* Colores de Acento Sutiles */
+  --color-accent-primary: #333333;
+  --color-accent-secondary: #666666;
+  --color-accent-tertiary: #999999;
+  --color-accent-light: #CCCCCC;
+  
+  /* Colores Semánticos Minimalistas */
+  --color-bg-primary: var(--color-white-pure);
+  --color-bg-secondary: var(--color-gray-50);
+  --color-text-primary: var(--color-black-soft);
+  --color-text-secondary: var(--color-gray-600);
+  --color-text-muted: var(--color-gray-500);
+  --color-border-subtle: var(--color-gray-200);
+  --color-shadow-soft: rgba(0, 0, 0, 0.04);
+  --color-shadow-medium: rgba(0, 0, 0, 0.08);
+  --color-shadow-strong: rgba(0, 0, 0, 0.12);
+  
+  /* Gradientes Sutiles */
+  --gradient-bg: linear-gradient(135deg, var(--color-white-pure) 0%, var(--color-gray-50) 100%);
+  --gradient-progress: linear-gradient(90deg, var(--color-accent-primary) 0%, var(--color-gray-800) 100%);
+  --gradient-shimmer: linear-gradient(90deg, transparent 0%, rgba(255, 255, 255, 0.4) 50%, transparent 100%);
+  --gradient-breathing: radial-gradient(circle, rgba(0, 0, 0, 0.02) 0%, transparent 70%);
+  
+  /* Tipografía Minimalista */
+  --font-family-primary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-size-xs: 10px;
+  --font-size-sm: 12px;
+  --font-size-base: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 24px;
+  --font-size-3xl: 32px;
+  --font-size-4xl: 48px;
+  --font-size-5xl: 64px;
+  
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.6;
+  
+  --letter-spacing-tight: -0.01em;
+  --letter-spacing-normal: 0em;
+  --letter-spacing-wide: 0.01em;
+  
+  /* Espaciado Minimalista con Proporción Áurea */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 32px;
+  --space-2xl: 48px;
+  --space-3xl: 64px;
+  --space-4xl: 96px;
+  --space-5xl: 128px;
+  
+  /* Radios Minimalistas */
+  --radius-xs: 2px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-xl: 16px;
+  --radius-2xl: 24px;
+  --radius-full: 9999px;
+  
+  /* Sombras Sutiles */
+  --shadow-xs: 0 1px 2px var(--color-shadow-soft);
+  --shadow-sm: 0 2px 4px var(--color-shadow-soft), 0 1px 2px var(--color-shadow-medium);
+  --shadow-md: 0 4px 8px var(--color-shadow-medium), 0 2px 4px var(--color-shadow-soft);
+  --shadow-lg: 0 8px 16px var(--color-shadow-medium), 0 4px 8px var(--color-shadow-soft);
+  --shadow-xl: 0 16px 32px var(--color-shadow-strong), 0 8px 16px var(--color-shadow-medium);
+  --shadow-inner: inset 0 1px 2px var(--color-shadow-soft);
+  --shadow-glow: 0 0 20px rgba(0, 0, 0, 0.05);
+  
+  /* Animaciones Elegantes */
+  --duration-instant: 0ms;
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-ultra-slow: 1000ms;
+  
+  /* Curvas de Easing Sofisticadas */
+  --ease-linear: linear;
+  --ease-in: cubic-bezier(0.4, 0.0, 1, 1);
+  --ease-out: cubic-bezier(0.0, 0.0, 0.2, 1);
+  --ease-in-out: cubic-bezier(0.4, 0.0, 0.2, 1);
+  --ease-back: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-elegant: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --ease-premium: cubic-bezier(0.23, 1, 0.320, 1);
+  --ease-breathing: cubic-bezier(0.37, 0, 0.63, 1);
+  
+  /* Dimensiones del Sistema */
+  --logo-size-mobile: 80px;
+  --logo-size-tablet: 100px;
+  --logo-size-desktop: 120px;
+  --logo-size-large: 140px;
+  
+  --progress-width: 280px;
+  --progress-width-mobile: 240px;
+  --progress-height: 2px;
+  --progress-height-hover: 3px;
+  
+  --container-width: 400px;
+  --container-width-mobile: 320px;
+  
+  /* Z-Index Layers */
+  --z-background: 1;
+  --z-content: 10;
+  --z-logo: 20;
+  --z-progress: 30;
+  --z-overlay: 100;
+  
+  /* Optimización de Performance */
+  --gpu-acceleration: translateZ(0);
+  --hardware-acceleration: translate3d(0, 0, 0);
 }
 
 /* ===================================
-   RESET Y CONFIGURACIÓN BASE
+   CONFIGURACIÓN BASE PREMIUM
    =================================== */
 *,
 *::before,
 *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 100%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: var(--font-family-primary);
-    font-size: var(--font-size-body);
-    font-weight: var(--font-weight-regular);
-    line-height: var(--line-height-normal);
-    color: var(--color-text-primary);
-    background-color: var(--color-primary-bg);
-    overflow: hidden;
-    height: 100vh;
-    width: 100vw;
-    position: relative;
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-normal);
+  line-height: var(--line-height-normal);
+  color: var(--color-text-primary);
+  background: var(--color-bg-primary);
+  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  
+  /* Optimizaciones de renderizado */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
 }
 
 /* ===================================
-   CONTENEDOR PRINCIPAL DEL PRELOADER
+   PRELOADER MINIMALISTA PRINCIPAL
    =================================== */
-.preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--color-primary-bg);
-    display: grid;
-    place-items: center;
-    z-index: var(--z-index-modal);
-    
-    /* Transición suave para salida */
-    opacity: 1;
-    visibility: visible;
-    transition: 
-        opacity var(--duration-very-slow) var(--ease-out-smooth),
-        visibility var(--duration-very-slow) var(--ease-out-smooth);
+.minimal-preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--gradient-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: var(--z-overlay);
+  
+  /* Transiciones suaves */
+  opacity: 1;
+  visibility: visible;
+  transform: var(--hardware-acceleration);
+  transition: 
+    opacity var(--duration-ultra-slow) var(--ease-premium),
+    visibility var(--duration-ultra-slow) var(--ease-premium),
+    transform var(--duration-ultra-slow) var(--ease-premium);
 }
 
-.preloader.fade-out {
+.minimal-preloader.fade-out {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.98) var(--hardware-acceleration);
+}
+
+/* ===================================
+   CONTENEDOR CENTRAL MINIMALISTA
+   =================================== */
+.minimal-container {
+  position: relative;
+  max-width: var(--container-width);
+  width: 100%;
+  padding: var(--space-3xl) var(--space-xl);
+  z-index: var(--z-content);
+  
+  /* Entrada cinematográfica */
+  animation: containerEntrance 1.5s var(--ease-premium) both;
+}
+
+@keyframes containerEntrance {
+  0% {
     opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
+    transform: translateY(40px) scale(0.96);
+    filter: blur(8px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
 }
 
 /* ===================================
-   GRADIENTE SUTIL DE FONDO
-   =================================== */
-.background-gradient {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: 
-        radial-gradient(
-            circle at 50% 30%, 
-            var(--color-overlay-dark) 0%, 
-            transparent 50%
-        ),
-        radial-gradient(
-            ellipse at 30% 70%, 
-            var(--color-overlay-dark) 0%, 
-            transparent 40%
-        ),
-        linear-gradient(
-            135deg, 
-            var(--color-primary-bg) 0%, 
-            var(--color-secondary-bg) 100%
-        );
-    z-index: var(--z-index-background);
-    
-    /* Animación sutil de respiración */
-    animation: backgroundBreathe var(--duration-breathing) var(--ease-breathing) infinite alternate;
-}
-
-@keyframes backgroundBreathe {
-    0% {
-        transform: scale(1);
-        opacity: 0.7;
-    }
-    100% {
-        transform: scale(1.02);
-        opacity: 1;
-    }
-}
-
-/* ===================================
-   CONTENIDO CENTRAL DEL PRELOADER
-   =================================== */
-.preloader__content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    max-width: var(--content-max-width);
-    width: 100%;
-    padding: var(--spacing-xl);
-    z-index: var(--z-index-content);
-    
-    /* Animación de entrada suave */
-    animation: contentFadeIn var(--duration-very-slow) var(--ease-out-smooth) both;
-}
-
-@keyframes contentFadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(var(--spacing-md)) scale(0.98);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-/* ===================================
-   CONTENEDOR Y EFECTOS DEL LOGO
+   SISTEMA DE LOGO ULTRA ELEGANTE
    =================================== */
 .logo-container {
-    position: relative;
-    margin-bottom: var(--spacing-2xl);
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: var(--space-4xl);
+  z-index: var(--z-logo);
 }
 
-.logo-wrapper {
-    position: relative;
-    width: var(--logo-size-desktop);
-    height: var(--logo-size-desktop);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-    /* Animación de entrada con delay */
-    animation: logoEnter var(--duration-slow) var(--ease-out-smooth) 0.2s both;
+/* Efecto de Respiración Sutil */
+.logo-breathing-effect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(var(--logo-size-desktop) + 60px);
+  height: calc(var(--logo-size-desktop) + 60px);
+  transform: translate(-50%, -50%);
+  background: var(--gradient-breathing);
+  border-radius: var(--radius-full);
+  z-index: 1;
+  
+  animation: breathingPulse 6s var(--ease-breathing) infinite alternate;
 }
 
-@keyframes logoEnter {
-    0% {
-        opacity: 0;
-        transform: scale(0.9);
-        filter: blur(1px);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-        filter: blur(0);
-    }
+@keyframes breathingPulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0.1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0.3;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.1;
+  }
 }
 
-/* Logo principal */
-.logo-image {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    object-position: center;
-    border-radius: var(--radius-medium);
-    
-    /* Efecto sutil de sombra */
-    box-shadow: var(--shadow-subtle);
-    
-    /* Transición suave para interacciones */
-    transition: 
-        transform var(--duration-normal) var(--ease-out-smooth),
-        box-shadow var(--duration-normal) var(--ease-out-smooth),
-        filter var(--duration-normal) var(--ease-out-smooth);
-    
-    /* Animación muy sutil de respiración */
-    animation: logoBreath var(--duration-breathing) var(--ease-breathing) infinite alternate;
+/* Logo Principal */
+.minimal-logo {
+  position: relative;
+  width: var(--logo-size-desktop);
+  height: var(--logo-size-desktop);
+  object-fit: cover;
+  border-radius: var(--radius-2xl);
+  z-index: 5;
+  
+  /* Efectos sutiles */
+  filter: brightness(1.02) contrast(1.05);
+  box-shadow: var(--shadow-lg);
+  
+  /* Animación de entrada y respiración */
+  animation: 
+    logoFadeIn 1.2s var(--ease-premium) 0.3s both,
+    logoBreathingSubtle 8s var(--ease-breathing) 1.5s infinite alternate;
+  
+  transition: all var(--duration-normal) var(--ease-elegant);
 }
 
-@keyframes logoBreath {
-    0% {
-        transform: scale(1);
-        filter: brightness(1);
-    }
-    100% {
-        transform: scale(1.02);
-        filter: brightness(1.05);
-    }
-}
-
-/* Efecto de pulso sutil alrededor del logo */
-.logo-pulse {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 120%;
-    height: 120%;
-    border: var(--border-thin) solid var(--color-pulse);
-    border-radius: var(--radius-medium);
-    transform: translate(-50%, -50%);
-    
-    /* Animación de pulso expansivo */
-    animation: logoPulse calc(var(--duration-breathing) * 1.5) var(--ease-breathing) infinite;
+@keyframes logoFadeIn {
+  0% {
     opacity: 0;
-}
-
-@keyframes logoPulse {
-    0% {
-        transform: translate(-50%, -50%) scale(0.9);
-        opacity: 0;
-    }
-    50% {
-        opacity: 1;
-    }
-    100% {
-        transform: translate(-50%, -50%) scale(1.1);
-        opacity: 0;
-    }
-}
-
-/* ===================================
-   TEXTO DE CARGA MINIMALISTA
-   =================================== */
-.loading-text-container {
-    margin-bottom: var(--spacing-xl);
-    
-    /* Animación de entrada con delay */
-    animation: textEnter var(--duration-slow) var(--ease-out-smooth) 0.4s both;
-}
-
-@keyframes textEnter {
-    0% {
-        opacity: 0;
-        transform: translateY(var(--spacing-sm));
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.loading-text {
-    font-size: var(--font-size-medium);
-    font-weight: var(--font-weight-regular);
-    color: var(--color-text-secondary);
-    letter-spacing: var(--letter-spacing-wide);
-    line-height: var(--line-height-normal);
-    margin: 0;
-    
-    /* Transición suave para cambios de texto */
-    transition: 
-        opacity var(--duration-normal) var(--ease-out-smooth),
-        transform var(--duration-normal) var(--ease-out-smooth);
-}
-
-.loading-text.fade-change {
-    opacity: 0.5;
-    transform: translateY(-var(--spacing-xs));
-}
-
-/* ===================================
-   BARRA DE PROGRESO ELEGANTE
-   =================================== */
-.progress-container {
-    width: 100%;
-    max-width: var(--progress-width-desktop);
-    margin-bottom: var(--spacing-lg);
-    
-    /* Animación de entrada con delay */
-    animation: progressEnter var(--duration-slow) var(--ease-out-smooth) 0.6s both;
-}
-
-@keyframes progressEnter {
-    0% {
-        opacity: 0;
-        transform: translateY(var(--spacing-sm)) scaleX(0.8);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) scaleX(1);
-    }
-}
-
-/* Track de la barra de progreso */
-.progress-track {
-    position: relative;
-    width: 100%;
-    height: var(--progress-height);
-    background-color: var(--color-border-light);
-    border-radius: var(--radius-small);
-    overflow: hidden;
-    
-    /* Sombra interna sutil */
-    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-
-/* Relleno de la barra de progreso */
-.progress-fill {
-    position: relative;
-    height: 100%;
-    width: 0%;
-    background-color: var(--color-progress);
-    border-radius: var(--radius-small);
-    
-    /* Transición suave del progreso */
-    transition: width var(--duration-normal) var(--ease-out-smooth);
-    
-    /* Transformación inicial */
-    transform-origin: left center;
-}
-
-/* Brillo sutil al final de la barra */
-.progress-glow {
-    position: absolute;
-    top: 0;
-    right: -2px;
-    width: 4px;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, var(--color-glow));
-    border-radius: var(--radius-small);
-    
-    /* Animación de parpadeo sutil */
-    animation: progressGlow var(--duration-breathing) var(--ease-breathing) infinite alternate;
-    opacity: 0;
-}
-
-.progress-fill[style*="width: 0"] .progress-glow {
-    opacity: 0;
-}
-
-.progress-fill:not([style*="width: 0"]) .progress-glow {
+    transform: scale(0.7) rotateY(-30deg);
+    filter: brightness(0.5) contrast(0.8) blur(10px);
+  }
+  70% {
+    opacity: 0.8;
+    transform: scale(0.95) rotateY(-5deg);
+    filter: brightness(0.9) contrast(0.95) blur(2px);
+  }
+  100% {
     opacity: 1;
+    transform: scale(1) rotateY(0deg);
+    filter: brightness(1.02) contrast(1.05) blur(0);
+  }
 }
 
-@keyframes progressGlow {
-    0% {
-        opacity: 0.3;
-        transform: scaleY(1);
-    }
-    100% {
-        opacity: 0.8;
-        transform: scaleY(1.2);
-    }
-}
-
-/* ===================================
-   PORCENTAJE DE PROGRESO DISCRETO
-   =================================== */
-.progress-percentage {
-    margin-top: var(--spacing-md);
-    text-align: center;
-    
-    /* Animación de entrada con delay */
-    animation: percentageEnter var(--duration-slow) var(--ease-out-smooth) 0.8s both;
-}
-
-@keyframes percentageEnter {
-    0% {
-        opacity: 0;
-        transform: translateY(var(--spacing-xs));
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.percentage-text {
-    font-size: var(--font-size-small);
-    font-weight: var(--font-weight-medium);
-    color: var(--color-text-subtle);
-    letter-spacing: var(--letter-spacing-normal);
-    
-    /* Transición suave para actualizaciones */
-    transition: 
-        color var(--duration-fast) var(--ease-out-smooth),
-        transform var(--duration-fast) var(--ease-out-smooth);
-}
-
-.percentage-text.updating {
-    color: var(--color-text-secondary);
-    transform: scale(1.05);
-}
-
-/* ===================================
-   PANTALLA DE COMPLETADO MINIMALISTA
-   =================================== */
-.completed-screen {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: var(--color-primary-bg);
-    display: grid;
-    place-items: center;
-    z-index: var(--z-index-modal);
-    
-    /* Estado inicial oculto */
-    opacity: 0;
-    visibility: hidden;
-    transform: scale(0.95);
-    
-    /* Transiciones suaves */
-    transition: 
-        opacity var(--duration-very-slow) var(--ease-out-smooth),
-        visibility var(--duration-very-slow) var(--ease-out-smooth),
-        transform var(--duration-very-slow) var(--ease-out-smooth);
-}
-
-.completed-screen:not(.hidden) {
-    opacity: 1;
-    visibility: visible;
+@keyframes logoBreathingSubtle {
+  0% {
     transform: scale(1);
-}
-
-.completed-screen.hidden {
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-    transform: scale(0.95) !important;
-}
-
-/* ===================================
-   CONTENIDO DE PANTALLA COMPLETADA
-   =================================== */
-.completed-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    max-width: var(--content-max-width);
-    width: 100%;
-    padding: var(--spacing-xl);
-    
-    /* Animación de entrada escalonada */
-    animation: completedEnter var(--duration-very-slow) var(--ease-out-smooth) both;
-}
-
-@keyframes completedEnter {
-    0% {
-        opacity: 0;
-        transform: translateY(var(--spacing-lg)) scale(0.95);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
+    filter: brightness(1.02) contrast(1.05);
+    box-shadow: var(--shadow-lg);
+  }
+  50% {
+    transform: scale(1.015);
+    filter: brightness(1.05) contrast(1.08);
+    box-shadow: var(--shadow-xl);
+  }
+  100% {
+    transform: scale(1.025);
+    filter: brightness(1.08) contrast(1.1);
+    box-shadow: var(--shadow-glow);
+  }
 }
 
 /* ===================================
-   INDICADOR DE ÉXITO MINIMALISTA
+   SISTEMA DE PROGRESO ULTRA LIMPIO
    =================================== */
-.success-indicator {
-    width: var(--logo-size-desktop);
-    height: var(--logo-size-desktop);
-    margin-bottom: var(--spacing-xl);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-overlay-light);
-    border: var(--border-thin) solid var(--color-border-light);
-    border-radius: var(--radius-full);
-    
-    /* Sombra sutil */
-    box-shadow: var(--shadow-minimal);
-    
-    /* Animación de entrada con delay */
-    animation: 
-        successEnter var(--duration-slow) var(--ease-out-smooth) 0.2s both,
-        successPulse calc(var(--duration-breathing) * 2) var(--ease-breathing) 1s infinite alternate;
+.minimal-progress-system {
+  text-align: center;
+  margin-bottom: var(--space-3xl);
+  
+  animation: progressSystemEntrance 1.8s var(--ease-premium) 0.8s both;
 }
 
-@keyframes successEnter {
-    0% {
-        opacity: 0;
-        transform: scale(0.8) rotate(-10deg);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1) rotate(0deg);
-    }
+@keyframes progressSystemEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+    filter: blur(4px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+  }
 }
 
-@keyframes successPulse {
-    0% {
-        transform: scale(1);
-        box-shadow: var(--shadow-minimal);
-    }
-    100% {
-        transform: scale(1.02);
-        box-shadow: var(--shadow-subtle);
-    }
+/* Contenedor de Progreso */
+.progress-container {
+  position: relative;
+  margin-bottom: var(--space-xl);
 }
 
-/* Icono de check minimalista */
-.check-icon {
-    width: 32px;
-    height: 32px;
-    color: var(--color-success);
-    
-    /* Animación de dibujo del check */
-    animation: checkDraw var(--duration-slow) var(--ease-out-smooth) 0.8s both;
+/* Track de Progreso */
+.progress-track {
+  position: relative;
+  width: var(--progress-width);
+  height: var(--progress-height);
+  background: var(--color-gray-200);
+  border-radius: var(--radius-full);
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: var(--shadow-inner);
+  
+  /* Efecto hover sutil */
+  transition: all var(--duration-normal) var(--ease-elegant);
 }
 
-.check-path {
-    stroke-dasharray: 20;
-    stroke-dashoffset: 20;
-    animation: checkPathDraw var(--duration-slow) var(--ease-out-smooth) 1s both;
+.progress-track:hover {
+  height: var(--progress-height-hover);
+  box-shadow: var(--shadow-md);
 }
 
-@keyframes checkDraw {
-    0% {
-        opacity: 0;
-        transform: scale(0.8);
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+/* Relleno de Progreso */
+.progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: var(--gradient-progress);
+  border-radius: var(--radius-full);
+  
+  /* Transición suave y elegante */
+  transition: width var(--duration-slow) var(--ease-premium);
+  
+  /* Efecto de brillo sutil */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes checkPathDraw {
-    0% {
-        stroke-dashoffset: 20;
-    }
-    100% {
-        stroke-dashoffset: 0;
-    }
+/* Shimmer Effect */
+.progress-shimmer {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  height: 100%;
+  background: var(--gradient-shimmer);
+  border-radius: var(--radius-full);
+  
+  animation: shimmerMove 2s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes shimmerMove {
+  0% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+}
+
+/* Display de Porcentaje */
+.percentage-display {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: var(--space-xs);
+  font-family: var(--font-family-primary);
+}
+
+.percentage-value {
+  font-size: var(--font-size-3xl);
+  font-weight: var(--font-weight-light);
+  color: var(--color-text-primary);
+  letter-spacing: var(--letter-spacing-tight);
+  
+  /* Transición suave para cambios de valor */
+  transition: all var(--duration-normal) var(--ease-elegant);
+}
+
+.percentage-symbol {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-text-secondary);
 }
 
 /* ===================================
-   TÍTULOS Y TEXTOS DE COMPLETADO
+   ESTADO DE CARGA DISCRETO
    =================================== */
-.completed-title {
-    font-size: var(--font-size-title);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text-primary);
-    letter-spacing: var(--letter-spacing-tight);
-    line-height: var(--line-height-tight);
-    margin-bottom: var(--spacing-md);
-    
-    /* Animación de entrada con delay */
-    animation: titleEnter var(--duration-slow) var(--ease-out-smooth) 0.4s both;
+.loading-status {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+  
+  animation: statusEntrance 2s var(--ease-premium) 1.2s both;
 }
 
-@keyframes titleEnter {
-    0% {
-        opacity: 0;
-        transform: translateY(var(--spacing-sm));
-        filter: blur(0.5px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-        filter: blur(0);
-    }
-}
-
-.completed-subtitle {
-    font-size: var(--font-size-body);
-    font-weight: var(--font-weight-regular);
-    color: var(--color-text-secondary);
-    letter-spacing: var(--letter-spacing-normal);
-    line-height: var(--line-height-relaxed);
-    margin: 0 0 var(--spacing-2xl) 0;
-    
-    /* Animación de entrada con delay */
-    animation: subtitleEnter var(--duration-slow) var(--ease-out-smooth) 0.6s both;
-}
-
-@keyframes subtitleEnter {
-    0% {
-        opacity: 0;
-        transform: translateY(var(--spacing-xs));
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* ===================================
-   BOTÓN DE REINICIO ELEGANTE
-   =================================== */
-.restart-btn {
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: var(--spacing-md) var(--spacing-xl);
-    background-color: transparent;
-    border: var(--border-thin) solid var(--color-border-light);
-    border-radius: var(--radius-medium);
-    color: var(--color-text-secondary);
-    font-family: var(--font-family-primary);
-    font-size: var(--font-size-body);
-    font-weight: var(--font-weight-medium);
-    letter-spacing: var(--letter-spacing-normal);
-    cursor: pointer;
-    overflow: hidden;
-    
-    /* Transiciones suaves */
-    transition: 
-        all var(--duration-normal) var(--ease-out-smooth),
-        transform var(--duration-fast) var(--ease-out-smooth);
-    
-    /* Animación de entrada con delay */
-    animation: buttonEnter var(--duration-slow) var(--ease-out-smooth) 0.8s both;
-    
-    /* Estados de interacción */
-    &:hover {
-        background-color: var(--color-overlay-dark);
-        border-color: var(--color-text-subtle);
-        color: var(--color-text-primary);
-        transform: translateY(-1px);
-        box-shadow: var(--shadow-subtle);
-    }
-    
-    &:active {
-        transform: translateY(0);
-        box-shadow: var(--shadow-minimal);
-    }
-    
-    &:focus-visible {
-        outline: var(--border-medium) solid var(--color-accent);
-        outline-offset: 2px;
-    }
-}
-
-/* Soporte para navegadores que no soportan & */
-.restart-btn:hover {
-    background-color: var(--color-overlay-dark);
-    border-color: var(--color-text-subtle);
-    color: var(--color-text-primary);
-    transform: translateY(-1px);
-    box-shadow: var(--shadow-subtle);
-}
-
-.restart-btn:active {
+@keyframes statusEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  100% {
+    opacity: 1;
     transform: translateY(0);
-    box-shadow: var(--shadow-minimal);
+  }
 }
 
-.restart-btn:focus-visible {
-    outline: var(--border-medium) solid var(--color-accent);
-    outline-offset: 2px;
+.status-text {
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-normal);
+  color: var(--color-text-secondary);
+  letter-spacing: var(--letter-spacing-wide);
+  
+  /* Transición suave para cambios de texto */
+  transition: 
+    opacity var(--duration-normal) var(--ease-elegant),
+    transform var(--duration-normal) var(--ease-elegant),
+    color var(--duration-normal) var(--ease-elegant);
 }
 
-@keyframes buttonEnter {
-    0% {
-        opacity: 0;
-        transform: translateY(var(--spacing-sm)) scale(0.95);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
-}
-
-.btn-text {
-    position: relative;
-    z-index: 2;
-}
-
-/* Indicador sutil de hover */
-.btn-indicator {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-        90deg, 
-        transparent, 
-        var(--color-overlay-dark), 
-        transparent
-    );
-    transition: left var(--duration-slow) var(--ease-out-smooth);
-}
-
-.restart-btn:hover .btn-indicator {
-    left: 100%;
+.status-text.updating {
+  opacity: 0.7;
+  transform: translateY(-2px);
+  color: var(--color-text-primary);
 }
 
 /* ===================================
-   RESPONSIVE DESIGN MINIMALISTA
+   INDICADOR DE RED MINIMALISTA
    =================================== */
-
-/* Tablets */
-@media (max-width: 768px) {
-    :root {
-        --logo-size-desktop: var(--logo-size-tablet);
-        --progress-width-desktop: var(--progress-width-tablet);
-        --spacing-xl: var(--spacing-lg);
-        --spacing-2xl: var(--spacing-xl);
-    }
-    
-    .preloader__content {
-        padding: var(--spacing-lg);
-        max-width: 90%;
-    }
-    
-    .completed-content {
-        padding: var(--spacing-lg);
-        max-width: 90%;
-    }
-    
-    .completed-title {
-        font-size: var(--font-size-large);
-    }
+.network-indicator {
+  position: absolute;
+  bottom: var(--space-xl);
+  right: var(--space-xl);
+  z-index: var(--z-overlay);
+  
+  opacity: 0.6;
+  transition: opacity var(--duration-normal) var(--ease-elegant);
 }
 
-/* Móviles */
+.network-indicator:hover {
+  opacity: 1;
+}
+
+.network-dot {
+  width: 8px;
+  height: 8px;
+  background: var(--color-accent-tertiary);
+  border-radius: var(--radius-full);
+  
+  animation: networkPulse 2s var(--ease-in-out) infinite;
+}
+
+.network-dot.connected {
+  background: var(--color-accent-primary);
+}
+
+.network-dot.fast {
+  background: var(--color-text-primary);
+  animation-duration: 1s;
+}
+
+@keyframes networkPulse {
+  0%, 100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+/* ===================================
+   RESPONSIVE DESIGN PREMIUM
+   =================================== */
+@media (max-width: 768px) {
+  :root {
+    --logo-size-desktop: var(--logo-size-tablet);
+    --progress-width: var(--progress-width-mobile);
+    --container-width: var(--container-width-mobile);
+    --font-size-3xl: var(--font-size-2xl);
+    --space-4xl: var(--space-3xl);
+  }
+  
+  .minimal-container {
+    padding: var(--space-2xl) var(--space-lg);
+  }
+  
+  .logo-breathing-effect {
+    width: calc(var(--logo-size-tablet) + 40px);
+    height: calc(var(--logo-size-tablet) + 40px);
+  }
+}
+
 @media (max-width: 480px) {
-    :root {
-        --logo-size-desktop: var(--logo-size-mobile);
-        --progress-width-desktop: var(--progress-width-mobile);
-        --font-size-title: var(--font-size-large);
-        --spacing-xl: var(--spacing-md);
-        --spacing-2xl: var(--spacing-lg);
-    }
-    
-    .preloader__content {
-        padding: var(--spacing-md);
-        max-width: 95%;
-    }
-    
-    .completed-content {
-        padding: var(--spacing-md);
-        max-width: 95%;
-    }
-    
-    .loading-text {
-        font-size: var(--font-size-body);
-    }
-    
-    .completed-subtitle {
-        font-size: var(--font-size-small);
-    }
-    
-    .restart-btn {
-        padding: var(--spacing-sm) var(--spacing-lg);
-        font-size: var(--font-size-small);
-    }
+  :root {
+    --logo-size-desktop: var(--logo-size-mobile);
+    --font-size-2xl: var(--font-size-xl);
+    --space-3xl: var(--space-2xl);
+  }
+  
+  .minimal-container {
+    padding: var(--space-xl) var(--space-md);
+  }
+  
+  .logo-breathing-effect {
+    width: calc(var(--logo-size-mobile) + 30px);
+    height: calc(var(--logo-size-mobile) + 30px);
+  }
+  
+  .network-indicator {
+    bottom: var(--space-lg);
+    right: var(--space-lg);
+  }
+}
+
+@media (min-width: 1200px) {
+  :root {
+    --logo-size-desktop: var(--logo-size-large);
+    --progress-width: 320px;
+    --container-width: 480px;
+  }
 }
 
 /* ===================================
    UTILIDADES Y ESTADOS
    =================================== */
-.hidden {
-    display: none !important;
-    opacity: 0 !important;
-    visibility: hidden !important;
-    pointer-events: none !important;
-}
-
 .fade-in {
-    animation: fadeIn var(--duration-normal) var(--ease-out-smooth) both;
+  animation: fadeInSmooth var(--duration-slow) var(--ease-premium) both;
 }
 
 .fade-out {
-    animation: fadeOut var(--duration-normal) var(--ease-out-smooth) both;
+  animation: fadeOutSmooth var(--duration-slow) var(--ease-premium) both;
 }
 
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+@keyframes fadeInSmooth {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.99);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
 
-@keyframes fadeOut {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
+@keyframes fadeOutSmooth {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-10px) scale(0.99);
+  }
+}
+
+.hidden {
+  display: none !important;
+  opacity: 0 !important;
+  visibility: hidden !important;
+  pointer-events: none !important;
 }
 
 /* ===================================
-   ACCESIBILIDAD Y MEJORAS PROGRESIVAS
+   ACCESIBILIDAD PREMIUM
    =================================== */
-
-/* Reducir movimiento para usuarios sensibles */
 @media (prefers-reduced-motion: reduce) {
-    *,
-    *::before,
-    *::after {
-        animation-duration: 0.01ms !important;
-        animation-iteration-count: 1 !important;
-        transition-duration: 0.01ms !important;
-        scroll-behavior: auto !important;
-    }
-    
-    .logo-pulse {
-        display: none;
-    }
-    
-    .background-gradient {
-        animation: none;
-    }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  .logo-breathing-effect,
+  .progress-shimmer {
+    display: none !important;
+  }
 }
 
-/* Alto contraste para accesibilidad */
 @media (prefers-contrast: high) {
-    :root {
-        --color-text-secondary: #000000;
-        --color-border-light: rgba(0, 0, 0, 0.2);
-        --color-progress: #000000;
-    }
+  :root {
+    --color-text-secondary: var(--color-gray-700);
+    --color-accent-primary: var(--color-black-pure);
+    --color-border-subtle: var(--color-gray-400);
+  }
 }
 
-/* Soporte para modo oscuro del sistema */
 @media (prefers-color-scheme: dark) {
-    :root {
-        --color-primary-bg: #1a1a1a;
-        --color-secondary-bg: #0a0a0a;
-        --color-text-primary: #ffffff;
-        --color-text-secondary: #cccccc;
-        --color-text-subtle: #999999;
-        --color-accent: #ffffff;
-        --color-progress: #ffffff;
-        --color-success: #4ade80;
-        --color-overlay-light: rgba(0, 0, 0, 0.95);
-        --color-overlay-dark: rgba(255, 255, 255, 0.02);
-        --color-pulse: rgba(255, 255, 255, 0.03);
-        --color-glow: rgba(255, 255, 255, 0.1);
-        --color-border-light: rgba(255, 255, 255, 0.05);
-    }
+  :root {
+    --color-bg-primary: var(--color-gray-900);
+    --color-bg-secondary: var(--color-gray-800);
+    --color-text-primary: var(--color-white-soft);
+    --color-text-secondary: var(--color-gray-300);
+    --color-text-muted: var(--color-gray-400);
+    --color-border-subtle: var(--color-gray-700);
+    --color-accent-primary: var(--color-white-soft);
+    --color-shadow-soft: rgba(255, 255, 255, 0.04);
+    --color-shadow-medium: rgba(255, 255, 255, 0.08);
+    --color-shadow-strong: rgba(255, 255, 255, 0.12);
+    --gradient-bg: linear-gradient(135deg, var(--color-gray-900) 0%, var(--color-gray-800) 100%);
+    --gradient-progress: linear-gradient(90deg, var(--color-white-soft) 0%, var(--color-gray-300) 100%);
+    --gradient-breathing: radial-gradient(circle, rgba(255, 255, 255, 0.02) 0%, transparent 70%);
+  }
 }
 
 /* ===================================
-   PRINT STYLES (OCULTAR PRELOADER)
+   PERFORMANCE Y OPTIMIZACIÓN
+   =================================== */
+.minimal-preloader {
+  will-change: opacity, transform;
+  contain: layout style paint;
+}
+
+.minimal-logo {
+  will-change: transform, filter;
+  contain: layout style;
+}
+
+.progress-fill {
+  will-change: width;
+  contain: layout style;
+}
+
+.percentage-value {
+  will-change: contents;
+  contain: layout style;
+}
+
+/* ===================================
+   PRINT STYLES
    =================================== */
 @media print {
-    .preloader,
-    .completed-screen {
-        display: none !important;
-    }
+  .minimal-preloader {
+    display: none !important;
+  }
 }
