@@ -22,7 +22,7 @@ const MINIMAL_PRELOADER_CONFIG = Object.freeze({
   BUILD_TIMESTAMP: Date.now(),
   
   // Redirection Configuration - CRITICAL
-  REDIRECT_URL: 'servicios-main/index.html',
+  REDIRECT_URL: 'Servicios-main/servicio.html',
   AUTO_REDIRECT: true,
   REDIRECT_DELAY: 50, // Inmediato después de fade-out
   FADE_OUT_DURATION: 300,
