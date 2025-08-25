@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superior Matrimonial</title>
+    <link rel="stylesheet" href="styler.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header Perfectamente Simétrico -->
+        <header class="header">
+            <div class="header-content">
+                <div class="header-left">
+                    <button class="back-button" onclick="window.location.href='../'" aria-label="Regresar">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 12H5M12 19l-7-7 7-7"/>
+                        </svg>
+                        <span class="back-text">Regresar</span>
+                    </button>
+                    <div class="logo-container">
+                        <img src="Logo fondo blanco (2) (1).png" alt="Logo" class="logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+                        <div class="logo-fallback">SM</div>
+                    </div>
+                </div>
+                <div class="header-center">
+                    <h1 class="main-title">Superior Matrimonial</h1>
+                    
+                </div>
+                <div class="header-right">
+                    <div class="slide-counter">
+                        <span class="current-slide">1</span>
+                        <span class="counter-separator">/</span>
+                        <span class="total-slides">6</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Carrusel Ultra Elegante -->
+        <main class="carousel-main">
+            <div class="carousel-container">
+                <!-- Controles de Navegación -->
+                <button class="nav-control nav-prev" id="navPrev" aria-label="Imagen anterior">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M15 18l-6-6 6-6"/>
+                    </svg>
+                </button>
+                
+                <button class="nav-control nav-next" id="navNext" aria-label="Imagen siguiente">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M9 18l6-6-6-6"/>
+                    </svg>
+                </button>
+
+                <!-- Container de Imagen con Aspect Ratio Fijo -->
+                <div class="image-container">
+                    <div class="image-wrapper">
+                        <img 
+                            src="sup1.jpeg" 
+                            alt="Superior Matrimonial - Vista 1" 
+                            class="carousel-image active"
+                            id="currentImage"
+                        >
+                        <!-- Skeleton loader -->
+                        <div class="image-skeleton"></div>
+                    </div>
+                </div>
+
+                <!-- Información de la Imagen -->
+                
+            </div>
+        </main>
+
+        <!-- Indicadores Minimalistas -->
+       
+
+        <!-- Thumbnails Elegantes -->
+        <div class="thumbnails-section">
+            <div class="thumbnails-container">
+                <div class="thumbnail active" data-index="0">
+                    <img src="sup1.jpeg" alt="Vista 1" class="thumbnail-image">
+                </div>
+                <div class="thumbnail" data-index="1">
+                    <img src="sup2.jpeg" alt="Vista 2" class="thumbnail-image">
+                </div>
+                <div class="thumbnail" data-index="2">
+                    <img src="sup3.jpeg" alt="Vista 3" class="thumbnail-image">
+                </div>
+                <div class="thumbnail" data-index="3">
+                    <img src="sup4.jpeg" alt="Vista 4" class="thumbnail-image">
+                </div>
+                <div class="thumbnail" data-index="3">
+                    <img src="sup5.jpeg" alt="Vista 4" class="thumbnail-image">
+                </div>
+                <div class="thumbnail" data-index="3">
+                    <img src="sup6.jpeg" alt="Vista 4" class="thumbnail-image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="appi.js"></script>
+</body>
+</html>
