@@ -2,56 +2,8 @@
  * ===================================
  * PRELOADER ULTRA MINIMALISTA ENTERPRISE 2025
  * ===================================
- * 
- * Arquitectura Enterprise-Level JavaScript Ultra Robusta
- * - Más de 50KB de código premium enterprise
- * - Sistema modular con 15+ clases especializadas
- * - Patrones de diseño avanzados (Observer, Factory, Strategy, Command)
- * - Gestión de memoria optimizada y garbage collection
- * - Performance monitoring en tiempo real
- * - Error tracking y recovery automático
- * - Arquitectura orientada a servicios (SOA)
- * - Microservicios pattern implementation
- * - Event-driven architecture
- * - Dependency injection container
- * - State management avanzado
- * - Network optimization inteligente
- * - Progressive enhancement
- * - Accessibility AAA compliance
- * - Cross-browser compatibility total
- * - Memory leak prevention
- * - Performance budgeting
- * - Resource prefetching
- * - Service worker ready
- * - PWA compatible
- * 
- * Características Premium:
- * - Detección automática de velocidad de red
- * - Optimización dinámica según dispositivo
- * - Sistema de fallbacks múltiples
- * - Precarga inteligente de recursos
- * - Analytics y métricas en tiempo real
- * - Monitoring de Core Web Vitals
- * - Error boundary implementation
- * - Graceful degradation
- * - Progressive enhancement
- * - Internationalization ready
- * - Theme system integration
- * - Plugin architecture
- * - Event bus system
- * - State persistence
- * - Cache management
- * - Resource optimization
- * - Bundle splitting ready
- * - Lazy loading implementation
- * - Code splitting optimization
- * - Tree shaking optimization
- * 
- * @author Sistema Enterprise Minimalista
- * @version 3.0.0 Enterprise Ultra Clean
- * @license Premium Enterprise License
- * ===================================
  */
+
 
 'use strict';
 
@@ -70,7 +22,7 @@ const MINIMAL_PRELOADER_CONFIG = Object.freeze({
   BUILD_TIMESTAMP: Date.now(),
   
   // Redirection Configuration - CRITICAL
-  REDIRECT_URL: 'https://intiterravillas.github.io/Servicios/',
+  REDIRECT_URL: 'servicios-main/index.html',
   AUTO_REDIRECT: true,
   REDIRECT_DELAY: 50, // Inmediato después de fade-out
   FADE_OUT_DURATION: 300,
