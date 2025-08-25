@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información de Parking - Intiterra Apart Hotel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__content">
+                <div class="header__logo">
+                    <div class="logo-container">
+                        <img src="logo.png" alt="Logo Intiterra Apart Hotel" class="logo-image"
+                            onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <div class="logo-fallback" style="display: none;">
+                            <i class="fas fa-building"></i>
+                        </div>
+                    </div>
+                    <h1>Intiterra Apart Hotel</h1>
+                </div>
+                <p class="header__subtitle">Información de Parking</p>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content" id="main-content">
+            <!-- Welcome Section -->
+            <section class="welcome-section">
+                <div class="welcome-card">
+                    <div class="welcome-icon">
+                        <i class="fas fa-car"></i>
+                    </div>
+                    <h2>¡Bienvenido!</h2>
+                    <p>Si vienes en auto propio o alquilado, aquí tienes toda la información necesaria para acceder a
+                        nuestro garaje privado.</p>
+                </div>
+            </section>
+
+            <!-- Instructions Section -->
+            <section class="instructions-section">
+                <div class="card">
+                    <div class="card__header">
+                        <h3><i class="fas fa-route"></i> Instrucciones para llegar al garaje</h3>
+                    </div>
+                    <div class="card__body">
+                        <div class="step-list">
+                            <div class="step">
+                                <div class="step__number">1</div>
+                                <div class="step__content">
+                                    <h4>Dirígete a la ubicación</h4>
+                                    <p>Usa el mapa proporcionado más abajo para llegar hasta nuestras instalaciones.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step__number">2</div>
+                                <div class="step__content">
+                                    <h4>Sigue el camino recto</h4>
+                                    <p>El camino es completamente recto desde la entrada principal. No tomes ningún
+                                        desvío.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step__number">3</div>
+                                <div class="step__content">
+                                    <h4>Busca el portón rojo oscuro</h4>
+                                    <p>Verás un portón metálico de color <strong>rojo oscuro (tipo vino tinto)</strong>
+                                        a tu mano izquierda.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <div class="step__number">4</div>
+                                <div class="step__content">
+                                    <h4>¡Has llegado!</h4>
+                                    <p>Ese portón es la entrada oficial al garaje de <strong>Intiterra Apart
+                                            Hotel</strong>.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Reference Image Section -->
+            <section class="image-section">
+                <div class="card">
+                    <div class="card__header">
+                        <h3><i class="fas fa-image"></i> Imagen de referencia de la entrada</h3>
+                    </div>
+                    <div class="card__body">
+                        <div class="entrance-image-container">
+                            <div class="image-wrapper">
+                                <img src="entrada.jpeg"
+                                    alt="Imagen de la entrada del garaje - Portón metálico rojo oscuro"
+                                    class="entrance-image"
+                                    onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                                <div class="image-fallback" style="display: none;">
+                                    <div class="image-fallback-content">
+                                        <i class="fas fa-camera"></i>
+                                        <h4>Imagen de la entrada del garaje</h4>
+                                        <p>Busca un portón metálico de color <strong>rojo oscuro (vino tinto)</strong>
+                                        </p>
+                                        <div class="entrance-visual">
+                                            <div class="gate-representation">
+                                                <div class="gate-color-sample"></div>
+                                                <span>Color de referencia: Rojo vino oscuro</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="image-caption">
+                                <h4>Portón de entrada al garaje</h4>
+                                <p>Esta es la entrada que debes buscar: un portón metálico de color rojo oscuro (vino
+                                    tinto) ubicado a la izquierda del camino.</p>
+                            </div>
+                        </div>
+                        <div class="image-description">
+                            <strong>Características del portón:</strong>
+                            <ul>
+                                <li>Color: Rojo oscuro (vino tinto)</li>
+                                <li>Material: Metálico</li>
+                                <li>Ubicación: Lado izquierdo del camino</li>
+                                <li>Señalización: Intiterra Apart Hotel</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Key Information -->
+            <section class="key-info-section">
+                <div class="info-grid">
+                    <div class="info-card" tabindex="0" role="button" onclick="showLocationInfo()"
+                        onkeypress="handleCardKeypress(event, showLocationInfo)">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Ubicación</h4>
+                        <p>Portón metálico rojo oscuro a mano izquierda</p>
+                    </div>
+                    <div class="info-card" tabindex="0" role="button" onclick="showScheduleInfo()"
+                        onkeypress="handleCardKeypress(event, showScheduleInfo)">
+                        <i class="fas fa-clock"></i>
+                        <h4>Horarios</h4>
+                        <p>Acceso disponible 24 horas</p>
+                    </div>
+                    <div class="info-card" tabindex="0" role="button" onclick="showContactInfo()"
+                        onkeypress="handleCardKeypress(event, showContactInfo)">
+                        <i class="fas fa-phone"></i>
+                        <h4>Contacto</h4>
+                        <p>Recepción del hotel<br><small>Asistencia disponible</small></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Map Section -->
+            <section class="map-section">
+                <div class="card">
+                    <div class="card__header">
+                        <h3><i class="fas fa-map"></i> Ubicación del garaje</h3>
+                    </div>
+                    <div class="card__body">
+                        <div class="map-container">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d970.8013019036617!2d-72.17363919773203!3d-13.275113123093334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x916dddbe5de2ffc9%3A0x77b57294fe432b41!2sIntiterra%20cochera!5e0!3m2!1ses!2spe!4v1755915851435!5m2!1ses!2spe"
+                                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                        <div class="map-actions">
+                            <a href="https://maps.app.goo.gl/NeCb8rqQw92XqvNC9" target="_blank"
+                                class="btn btn--primary map-button">
+                                <i class="fas fa-external-link-alt"></i>
+                                Abrir en Google Maps
+                            </a>
+                            <p class="map-help-text">Haz clic para abrir la ubicación en tu aplicación de mapas</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Access Section -->
+            <section class="quick-access-section">
+                <div class="card">
+                    <div class="card__header">
+                        <h3><i class="fas fa-bolt"></i> Acceso rápido</h3>
+                    </div>
+                    <div class="card__body">
+                        <div class="quick-actions">
+                            <a href="https://maps.app.goo.gl/NeCb8rqQw92XqvNC9" target="_blank"
+                                class="quick-action-btn">
+                                <i class="fas fa-directions"></i>
+                                <span>Ver direcciones</span>
+                            </a>
+                            <button class="quick-action-btn" onclick="copyLocation()">
+                                <i class="fas fa-copy"></i>
+                                <span>Copiar ubicación</span>
+                            </button>
+                            <button class="quick-action-btn" onclick="shareLocation()">
+                                <i class="fas fa-share"></i>
+                                <span>Compartir</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Emergency Section -->
+            <section class="emergency-section">
+                <div class="alert-card">
+                    <div class="alert-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <div class="alert-content">
+                        <h4>¿Necesitas ayuda?</h4>
+                        <p>Si tienes dificultades para encontrar el garaje, no dudes en contactar con la recepción del
+                            hotel. Estaremos encantados de ayudarte a llegar a la entrada del garaje.</p>
+                        <div class="emergency-actions">
+                            <button class="btn btn--outline btn--sm" onclick="showContactInfo()">
+                                <i class="fas fa-phone"></i>
+                                Contactar recepción
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer__content">
+                <p>&copy; 2024 Intiterra Apart Hotel - Información de parking para huéspedes</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
